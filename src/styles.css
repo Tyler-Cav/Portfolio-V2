@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --bg-color: #ffffff;
+  --text-color: #212121;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
