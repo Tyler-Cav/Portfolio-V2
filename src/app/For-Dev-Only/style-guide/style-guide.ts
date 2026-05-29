@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './style-guide.css',
 })
 export class StyleGuide {
-
-    public fontSizeTypes: string[] = [
+  public fontSizeTypes: string[] = [
     '--size--2',
     '--size--1',
     '--size-0',
@@ -19,4 +18,17 @@ export class StyleGuide {
     '--size-5',
   ];
 
+  public coreColors = [
+    '--core-color-50',
+    '--core-color-100',
+    '--core-color-200',
+    '--core-color-300',
+    '--core-color-400',
+    '--core-color-500',
+    '--core-color-600',
+    '--core-color-700',
+    '--core-color-800',
+    '--core-color-900',
+    '--core-color-950',
+  ];
 }

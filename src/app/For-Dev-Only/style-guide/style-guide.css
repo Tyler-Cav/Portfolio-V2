@@ -1,4 +1,22 @@
-section {
+.font-sizes {
   display: flex;
   flex-direction: column;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-color-item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  border: 1px solid black;
+  font-size: var(--size--2);
 }

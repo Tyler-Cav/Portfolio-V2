@@ -1,7 +1,15 @@
 <h1>Font Sizing</h1>
-<section>
+<section class="font-sizes">
   @for (size of fontSizeTypes; track size) {
     <code [style]="`font-size: var(${size});`">var({{ size }})</code>
   }
 </section>
 <hr />
+<h1>Color Colors</h1>
+<section class="colors">
+  @for (color of coreColors; track color) {
+    <code class="main-color-item" [style]="`background-color: var(${color});`"
+      >var({{ color }})</code
+    >
+  }
+</section>

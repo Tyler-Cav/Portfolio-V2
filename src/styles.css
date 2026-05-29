@@ -1,4 +1,5 @@
 :root {
+  /* FONT SIZING */
   --size--2: clamp(0.6944rem, 0.6299rem + 0.3227vw, 0.88rem);
   --size--1: clamp(0.8333rem, 0.7406rem + 0.4638vw, 1.1rem);
   --size-0: clamp(1rem, 0.8696rem + 0.6522vw, 1.375rem);
@@ -7,8 +8,7 @@
   --size-3: clamp(1.728rem, 1.3949rem + 1.6653vw, 2.6855rem);
   --size-4: clamp(2.0736rem, 1.6272rem + 2.2319vw, 3.3569rem);
   --size-5: clamp(2.4883rem, 1.8943rem + 2.9702vw, 4.1962rem);
-  --bg-color: #ffffff;
-  --text-color: #212121;
+  /* CORE COLORS */
   --core-color-50: oklch(0.39 0.1 152);
   --core-color-100: oklch(0.42 0.09 152);
   --core-color-200: oklch(0.43 0.08 152);
@@ -20,6 +20,9 @@
   --core-color-800: oklch(0.56 0.02 150);
   --core-color-900: oklch(0.58 0.01 151);
   --core-color-950: oklch(0.6 0 NaN);
+
+  --bg-color: #ffffff;
+  --text-color: #212121;
 }
 
 .dark-theme {
