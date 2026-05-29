@@ -2,6 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  --size--2: clamp(0.6944rem, 0.6299rem + 0.3227vw, 0.88rem);
+  --size--1: clamp(0.8333rem, 0.7406rem + 0.4638vw, 1.1rem);
+  --size-0: clamp(1rem, 0.8696rem + 0.6522vw, 1.375rem);
+  --size-1: clamp(1.2rem, 1.0196rem + 0.9022vw, 1.7188rem);
+  --size-2: clamp(1.44rem, 1.1936rem + 1.2321vw, 2.1484rem);
+  --size-3: clamp(1.728rem, 1.3949rem + 1.6653vw, 2.6855rem);
+  --size-4: clamp(2.0736rem, 1.6272rem + 2.2319vw, 3.3569rem);
+  --size-5: clamp(2.4883rem, 1.8943rem + 2.9702vw, 4.1962rem);
   --bg-color: #ffffff;
   --text-color: #212121;
 }
@@ -14,5 +22,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background-color .5s ease, color .5s ease;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
 }
