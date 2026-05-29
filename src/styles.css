@@ -21,13 +21,14 @@
   --core-color-900: oklch(0.58 0.01 151);
   --core-color-950: oklch(0.6 0 NaN);
 
-  --bg-color: #ffffff;
-  --text-color: #212121;
-}
 
-.dark-theme {
   --bg-color: #121212;
   --text-color: #ffffff;
+}
+
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #212121;
 }
 
 *,
