@@ -1,8 +1,52 @@
-.main-header {
+.main-tagline {
   color: var(--core-color-50);
+  font-size: var(--size-5);
   font-variation-settings:
     "slnt" -8,
     "CRSV" 0,
     "ELSH" 0,
     "ELXP" 0;
+}
+
+.blink {
+  margin: 0;
+  padding: 0;
+  font-size: var(--size-5);
+  color: var(--core-color-50);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+section {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+:host {
+  display: block;
+  flex: 1;       /* fills page-shell */
+  min-height: 0;
+}
+
+article {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }

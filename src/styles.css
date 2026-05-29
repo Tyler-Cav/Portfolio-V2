@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:slnt,wght,CRSV,ELSH,ELXP@-8..0,100..900,0..1,0..100,0..100&display=swap');
+
 .bitcount-font {
   font-family: "Bitcount Grid Single", system-ui;
   font-optical-sizing: auto;
-  font-size: var(--size-2);
   font-weight: 400;
   font-style: normal;
-  }
+  /*BELOW ARE ADDITIONAL TEXT OPTIONS FOR THIS FONT*/
+  /*color: var(--core-color-50);*/
+  /*font-variation-settings:*/
+  /*  "slnt" -8,*/
+  /*  "CRSV" 0,*/
+  /*  "ELSH" 0,*/
+  /*  "ELXP" 0;*/
+}
+
 :root {
   /* FONT SIZING */
   --size--2: clamp(0.6944rem, 0.6299rem + 0.3227vw, 0.88rem);
@@ -47,7 +55,11 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition:
