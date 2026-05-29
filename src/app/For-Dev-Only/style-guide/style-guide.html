@@ -1,0 +1,7 @@
+<h1>Font Sizing</h1>
+<section>
+  @for (size of fontSizeTypes; track size) {
+    <code [style]="`font-size: var(${size});`">var({{ size }})</code>
+  }
+</section>
+<hr />
