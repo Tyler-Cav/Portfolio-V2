@@ -1,11 +1,11 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomePage } from './home-page/home-page';
 import { ThemeService } from '../theme-config.service';
+import { Header } from './header/header/header'
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomePage],
+  imports: [RouterOutlet, Header],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
