@@ -1,6 +1,6 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomePage } from '../home/home-page/home-page';
+import { HomePage } from './home-page/home-page';
 import { ThemeService } from '../theme-config.service';
 
 @Component({
