@@ -23,4 +23,9 @@ export class ThemeService {
       document.body.classList.remove('light-theme');
     }
   }
+
+  getCurrentTheme() {
+    return this.currentTheme;
+  }
+
 }
