@@ -26,4 +26,4 @@ jobs:
 
       # Step 4: Run your custom package.json script
       - name: Execute Custom Script
-        run: ng lint
+        run: npm run lint
