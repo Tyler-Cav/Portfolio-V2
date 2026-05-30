@@ -1,3 +1,5 @@
 button {
+  all: unset;
   font-size: var(--size-0);
+  background: none;
 }

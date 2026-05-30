@@ -8,10 +8,9 @@ import { Component, OnInit, signal } from '@angular/core';
 })
 export class HomePage implements OnInit{
 
-  public welcomeString: string = "Welcome..."
+  public welcomeString = "Welcome..."
   public visualText = signal('');
-  public fakeInputLine: string = "|"
-  public animatedText: string[] = []
+  public fakeInputLine = "|"
 
   ngOnInit(): void {
 

@@ -1,4 +1,4 @@
-import { Component, signal, OnInit } from '@angular/core';
+import { Component, signal, OnInit, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ThemeService } from '../theme-config.service';
 import { Header } from './header/header/header'
@@ -10,7 +10,8 @@ import { Header } from './header/header/header'
   styleUrl: './app.css',
 })
 export class App implements OnInit {
-  constructor(private themeService: ThemeService) {}
+
+  themeService = inject(ThemeService);
 
   protected readonly title = signal('Portfolio-V2');
 

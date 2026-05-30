@@ -1,4 +1,4 @@
-import {Component, OnInit, WritableSignal} from '@angular/core';
+import { Component, OnInit, WritableSignal, inject } from '@angular/core';
 import { ThemeService } from '../../../theme-config.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class ThemeButton implements OnInit {
 
   public themeSignal!: WritableSignal<string | null>;
 
-  constructor(private themeService: ThemeService) {}
+  themeService = inject(ThemeService);
 
   ngOnInit() {
 
