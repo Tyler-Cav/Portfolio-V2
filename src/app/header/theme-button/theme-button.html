@@ -1,1 +1,3 @@
-<button (click)="toggleTheme()">{{this.lightMode ? "🌙" : "🔆"}}</button>
+<button (mouseup)=changeBulb($event) (mousedown)=changeBulb($event) >
+    <img alt="Light-bulb" [ngSrc]="this.bulbSource()"  height="50" width="50"/>
+</button>
