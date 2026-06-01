@@ -25,13 +25,19 @@ export class ThemeButton implements OnInit {
     animatedDark: 'Test-Darkbulb-Frame-2.svg'
   };
 
+  public bulbSoundEffect = {
+    chainDownEffect: 'chain-down-sound-effect.mp3',
+    chainUpEffect: 'chain-up-sound-effect.mp3'
+  }
+
   themeService = inject(ThemeService);
 
   ngOnInit() {
 
     this.themeSignal = this.themeService.getCurrentTheme();
+    this.lightMode = this.themeSignal() === 'light-theme';
+
     if (this.lightMode) {
-      this.themeSignal() === 'light-theme';
       this.bulbSource.set(this.bulbSources.staticLight);
     } else {
       this.bulbSource.set(this.bulbSources.staticDark);
@@ -43,17 +49,36 @@ export class ThemeButton implements OnInit {
       this.themeService.toggleThemeOnClick();
       this.themeSignal = this.themeService.getCurrentTheme();
       this.lightMode = this.themeSignal() === 'light-theme';
+
+      this.playNotificationSound(this.bulbSoundEffect.chainUpEffect)
       if (this.lightMode) {
         this.bulbSource.set(this.bulbSources.staticLight);
       } else {
         this.bulbSource.set(this.bulbSources.staticDark);
       }
     } else if (event.type === 'mousedown') {
+      this.playNotificationSound(this.bulbSoundEffect.chainDownEffect)
       if (this.lightMode) {
         this.bulbSource.set(this.bulbSources.animatedLight);
       } else {
         this.bulbSource.set(this.bulbSources.animatedDark);
       }
     }
+  }
+
+  playNotificationSound(soundEffect: string): void {
+
+    const audio = new Audio();
+
+    audio.src = soundEffect;
+
+    audio.load();
+    audio.play()
+      .then(() => {
+        console.log('Audio playing successfully');
+      })
+      .catch((error) => {
+        console.error('Audio playback failed:', error);
+      });
   }
 }
