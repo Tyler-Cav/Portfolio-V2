@@ -1,4 +1,4 @@
-import { Component, OnInit, WritableSignal, inject, viewChild, ElementRef, signal } from '@angular/core';
+import { Component, OnInit, WritableSignal, inject, signal } from '@angular/core';
 import { ThemeService } from '../../../theme-config.service';
 import { NgOptimizedImage } from '@angular/common';
 
