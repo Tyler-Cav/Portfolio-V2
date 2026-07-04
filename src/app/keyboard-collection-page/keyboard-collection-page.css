@@ -7,7 +7,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: none;
-  background: linear-gradient(#000000, #ffffff, #000000);
+  background: linear-gradient(#777777 0%, white 20% 70%, #777777);
 }
 
 .vertical-keyboard-nav {
@@ -30,15 +30,15 @@
 }
 
 .keyboard-section-background div {
-  scroll-snap-align: start;
   height: 100dvh;
   width: 100%;
+  scroll-snap-align: start;
   overflow: hidden;
 
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: start;
+  justify-content: center;
 }
 
 .keyboard-section-background video {
