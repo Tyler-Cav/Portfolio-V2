@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .keyboard-section-background {
   width: 100%;
   height: 100dvh;
@@ -7,7 +9,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: none;
-  background: linear-gradient(#777777 0%, white 20% 70%, #777777);
+  background: linear-gradient(#777777 0%, #ffffff 20% 70%, #777777);
 }
 
 .vertical-keyboard-nav {
@@ -42,10 +44,14 @@
 }
 
 .keyboard-section-background video {
+  width: min(60%, 1300px);
   height: auto;
 }
 
-p {
-  font-size: var(--size-4);
+h2{
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--size-5);
   margin: 0;
 }
