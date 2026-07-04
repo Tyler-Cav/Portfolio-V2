@@ -1,19 +1,22 @@
 .keyboard-section-background {
-  width: 100dvw;
-  height: 100%;
+  width: 100%;
+  height: 100dvh;
+  min-height: 0;
   position: relative;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
   scrollbar-width: none;
+  background: linear-gradient(#000000, #ffffff, #000000);
 }
 
 .vertical-keyboard-nav {
-  width: 100%;
-  height: 100%;
-  justify-content: space-evenly;
   display: flex;
   flex-direction: column;
   align-items: end;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 150px;
   position: sticky;
   top: 100px;
 }
@@ -28,16 +31,21 @@
 
 .keyboard-section-background div {
   scroll-snap-align: start;
-  flex: none;
-  height: 100%;
+  height: 100dvh;
   width: 100%;
-  scroll-snap-stop: always;
-  overflow: hidden; /* Prevent double scrollbars on the outer block */
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
 }
 
-.content-wrapper {
-  max-height: 100%;
-  overflow-y: auto;
-  padding: 2rem;
-  overscroll-behavior: contain;
+.keyboard-section-background video {
+  height: auto;
+}
+
+p {
+  font-size: var(--size-4);
+  margin: 0;
 }
