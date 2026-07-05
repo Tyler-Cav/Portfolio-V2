@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class KeyboardCollectionPage {
 
+
+  scrollToSection(element: HTMLElement) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+  }
+
 }

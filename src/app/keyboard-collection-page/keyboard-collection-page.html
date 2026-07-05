@@ -1,34 +1,54 @@
 <section class="keyboard-section-background">
+  <div class="gradient-background"></div>
   <article class="vertical-keyboard-nav">
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
+    <button (click)="scrollToSection(one)">
+    </button>
+    <button (click)="scrollToSection(two)">
+    </button>
+    <button (click)="scrollToSection(three)">
+    </button>
+    <button (click)="scrollToSection(four)">
+    </button>
+    <button (click)="scrollToSection(five)">
+    </button>
+    <button (click)="scrollToSection(six)">
+    </button>
   </article>
-  <div id="one">
-    <h2>RAMA M65-B: Moon</h2>
-    <video
-      autoplay
-      [muted]="true"
-      playsinline
-      src="/webm-test.webm"
-      width="1040">
-      Your browser does not support the video tag.>
-    </video>
+  <div #one>
+    <section class="background-images-container">
+      <img src="/RAMA-M65-Moon-Top-Blur.png" alt="Blurred Keyboard Background">
+      <img src="/RAMA-M65-Moon-Bottom-Blur.png" alt="Blurred Keyboard Background">
+    </section>
+    <section class="main-keyboard-content">
+      <h2>RAMA M65-B: Moon One</h2>
+      <video
+        autoplay
+        [muted]="true"
+        playsinline
+        src="/webm-test.webm"
+        width="1040">
+        Your browser does not support the video tag.>
+      </video>
+    </section>
   </div>
-  <div id="two">
-    <h2>RAMA M65-B: Moon</h2>
-    <video
-      autoplay
-      [muted]="true"
-      playsinline
-      src="/webm-test.webm">
-      Your browser does not support the video tag.>
-    </video>
+  <div #two>
+    <section class="background-images-container">
+      <img src="/RAMA-M65-Moon-Top-Blur.png" alt="Blurred Keyboard Background">
+      <img src="/RAMA-M65-Moon-Bottom-Blur.png" alt="Blurred Keyboard Background">
+    </section>
+    <section class="main-keyboard-content">
+      <h2>RAMA M65-B: Moon</h2>
+      <video
+        autoplay
+        [muted]="true"
+        playsinline
+        src="/webm-test.webm"
+        width="1040">
+        Your browser does not support the video tag.>
+      </video>
+    </section>
   </div>
-  <div id="three">
+  <div #three>
     <h2>three</h2>
     <video
       autoplay
@@ -39,7 +59,7 @@
       Your browser does not support the video tag.>
     </video>
   </div>
-  <div id="four">
+  <div #four>
     <h2>four</h2>
     <video
       autoplay
@@ -50,7 +70,7 @@
       Your browser does not support the video tag.>
     </video>
   </div>
-  <div id="five">
+  <div #five>
     <h2>five</h2>
     <video
       autoplay
@@ -61,7 +81,7 @@
       Your browser does not support the video tag.>
     </video>
   </div>
-  <div id="six">
+  <div #six>
     <h2>six</h2>
     <video
       autoplay
